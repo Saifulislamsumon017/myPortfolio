@@ -1,16 +1,18 @@
-import Portfolio from '../assets/All Image/Portfolio.png';
+import LearnovaPlatform from '../assets/ProjectsImag/Learnova-Platform.png';
+import EventStride from '../assets/ProjectsImag/EventStride.png';
+import GreenTrack from '../assets/ProjectsImag/GreenTrack.png';
 
 const projectData = [
   {
     id: 1,
-    name: 'Portfolio',
-    image: Portfolio,
+    name: 'Learnova-platform',
+    image: LearnovaPlatform,
     details: {
       techStack: ['React.js', 'Tailwind CSS', 'Framer Motion'],
       description:
-        'A personal portfolio showcasing my work, skills, and projects with a clean and responsive design.',
-      liveLink: 'https://rohitsingh93300-portfolio.vercel.app/',
-      githubClient: 'https://github.com/rohitsingh93300/portfolio',
+        'Developed an authentication integration platform utilizing modern authentication solutions to enhance user security and streamline access management.',
+      liveLink: 'https://auth-integration-b3106.web.app/',
+      githubClient: 'https://github.com/Saifulislamsumon017/Learnova-platform',
       challenges: [
         'Ensuring responsive design across multiple devices',
         'Optimizing performance for fast load times',
@@ -25,18 +27,18 @@ const projectData = [
   },
   {
     id: 2,
-    name: 'E-Commerce Store',
-    image: Portfolio,
+    name: 'EventStride',
+    image: EventStride,
     details: {
-      techStack: ['Next.js', 'Tailwind CSS', 'Stripe API'],
+      techStack: ['Next.js', 'Tailwind CSS', 'Firebase'],
       description:
-        'A fully functional online store with product listings, cart management, and secure payments.',
-      liveLink: 'https://ecommerce-demo.vercel.app/',
-      githubClient: 'https://github.com/example/ecommerce-client',
+        'Developed EventStride, an authentication-enabled web application designed to streamline access to event-related features such as registration, scheduling, and personalized dashboards. The app ensures secure entry and enhances user experience with a smooth, responsive interface.',
+      liveLink: 'https://eventstride-auth.web.app/',
+      githubClient: 'https://github.com/Saifulislamsumon017/EventStride-Client',
       challenges: [
-        'Integrating Stripe for secure payments',
-        'Handling complex cart state management',
-        'SEO optimization for product pages',
+        'Integrating multiple authentication flows seamlessly',
+        'Maintaining secure session management while optimizing performance',
+        'Ensuring cross-platform compatibility and responsive layout consistency',
       ],
       futurePlans: [
         'Add user reviews and ratings',
@@ -48,16 +50,16 @@ const projectData = [
   {
     id: 3,
     name: 'Task Manager App',
-    image: Portfolio,
+    image: GreenTrack,
     details: {
-      techStack: ['React.js', 'Node.js', 'MongoDB'],
+      techStack: ['React.js', 'Tailwind Css', 'Firebase'],
       description:
-        'A task management tool allowing users to create, update, and track tasks with deadlines.',
-      liveLink: 'https://taskmanager-demo.vercel.app/',
-      githubClient: 'https://github.com/example/taskmanager-client',
+        'Developed Green-Track, a secure, responsive web application that implements user authentication to safeguard access to environmental tracking or dashboard features. Users can sign in using email/password or social logins, and then access personalized tracking tools or data management interfaces.',
+      liveLink: 'https://green-track-auth.web.app/',
+      githubClient: 'https://github.com/Saifulislamsumon017/GreenTrack-Client',
       challenges: [
-        'Implementing JWT authentication',
-        'Real-time task updates using WebSockets',
+        'Ensuring seamless integration of authentication flow across components',
+        'Balancing performance optimization while maintaining security best practices',
         'Ensuring smooth UI interactions',
       ],
       futurePlans: [

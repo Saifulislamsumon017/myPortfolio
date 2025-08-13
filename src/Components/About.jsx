@@ -23,7 +23,7 @@ import postman from '../assets/All Image/postman.png';
 const About = () => {
   return (
     <div className="relative" id="about">
-      <div className="bg-gray-100 py-12">
+      <div className="bg-gray-100 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-base text-red-600 font-semibold tracking-wide uppercase">

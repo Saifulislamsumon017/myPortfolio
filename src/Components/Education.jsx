@@ -15,9 +15,8 @@ const education = [
   {
     id: 0,
     img: glaLogo,
-    school: 'GLA University, Mathura',
-    date: 'Sept 2022 - July 2024',
-    grade: '7.81 CGPA',
+    school: 'Royal University of Dhaka',
+    date: 'July2015 - July 2016',
     desc: "I have completed my Master's degree (MCA) in Computer Applications from GLA University, Mathura. During my time at GLA, I gained a strong foundation in programming, software development, and computer science principles. I have studied courses such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Web Development, and Software Engineering. I actively participated in various workshops and technical events, which enhanced my skills and knowledge. My experience at GLA University has been instrumental in shaping my technical abilities and professional growth.",
     degree: 'MCA (Master of Computer Applications)',
   },
@@ -25,8 +24,7 @@ const education = [
     id: 1,
     img: glaLogo1,
     school: 'Royal University of Dhaka',
-    date: 'Sept 2018 - Aug 2021',
-    grade: '73.2%',
+    date: 'Jun 2009 - Dec 2013',
     desc: "I completed my Bachelor's degree in Computer Science (B.Sc.) from Royal University of Dhaka. Throughout my studies, I was immersed in a variety of subjects that deepened my understanding of computing and technology. From exploring Data Structures and Algorithms to diving into Web Development and Database Management Systems, I gained practical insights into the world of software development. My time at Royal University of Dhaka allowed me to work on projects that applied theoretical concepts to real-world problems.",
     degree: 'BSc (Bachelor of Science in Computer Science)',
   },
@@ -34,17 +32,15 @@ const education = [
     id: 2,
     img: bsaLogo,
     school: 'Hazera Taju Degree College',
-    date: 'Apr 2017 - March 2018',
-    grade: '78%',
-    desc: 'I completed my class 12 education from Hazera Taju Degree College, where I studied Physics, Chemistry, and Mathematics (PCM) with Computer Science.',
+    date: 'Jun 2007 - Dec 2008',
+    desc: 'I completed my class 12 education from Hazera Taju Degree College, where I studied Physics, Chemistry, and Mathematics with Computer Science.',
     degree: 'HSC (Higher Secondary Certificate)',
   },
   {
     id: 3,
     img: vpsLogo,
     school: 'Baitush Sharaf Adarsha Kamil Madrasah',
-    date: 'Apr 2015 - March 2016',
-    grade: '87.5%',
+    date: 'Jun 2005 - Dec 2006',
     desc: 'I completed my class 10 education from Baitush Sharaf Adarsha Kamil Madrasah, where I studied Science with Computer Application.',
     degree: 'SSC (Secondary School Certificate)',
   },
@@ -69,7 +65,7 @@ const Education = () => {
         </div>
 
         <VerticalTimeline lineColor="#dc2626">
-          {education.map(({ id, img, school, date, grade, desc, degree }) => (
+          {education.map(({ id, img, school, date, desc, degree }) => (
             <VerticalTimelineElement
               key={id}
               className="vertical-timeline-element--education"
@@ -103,9 +99,6 @@ const Education = () => {
               >
                 <h3 className="font-bold text-xl text-gray-900">{degree}</h3>
                 <h4 className="text-red-600 font-semibold">{school}</h4>
-                <p className="text-sm font-semibold text-gray-700">
-                  Grade: {grade}
-                </p>
                 <p className="leading-relaxed text-gray-700">{desc}</p>
               </div>
             </VerticalTimelineElement>

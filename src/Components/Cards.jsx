@@ -5,7 +5,11 @@ import { Link } from 'react-router';
 const Cards = ({ item }) => {
   return (
     <div className="border border-red-500 rounded-lg w-[350px] lg:w-[400px] bg-red-50">
-      <img src={item.image} alt={item.name} className="rounded-lg" />
+      <img
+        src={item.image}
+        alt={item.name}
+        className="rounded-lg w-full h-[300px] object-cover object-top mb-6"
+      />
       <div className="p-4">
         <h1 className="font-semibold text-xl mb-2">{item.name}</h1>
         <p>{item.details.description.substring(0, 100)}...</p>

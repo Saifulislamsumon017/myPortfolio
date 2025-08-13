@@ -1,5 +1,5 @@
 import React from 'react';
-import hero from '../assets/All Image/Hero.png';
+import hero from '../assets/Sumon/Mohammad Saiful Islam2025081253955.png';
 import facebook from '../assets/All Image/facebook.png';
 import twitter from '../assets/All Image/twitter.png';
 import instagram from '../assets/All Image/instagram.png';
@@ -35,7 +35,11 @@ const Hero = () => {
             </button>
           </div>
           <div className="md:w-1/2 relative flex justify-center items-end">
-            <img src={hero} alt="" className="lg:h-[90vh] h-96" />
+            <img
+              src={hero}
+              alt=""
+              className="lg:h-[85vh] h-96 object-cover rounded-2xl shadow-lg"
+            />
             <img
               src={reactLogo}
               alt=""
@@ -55,10 +59,22 @@ const Hero = () => {
         </div>
       </div>
       <div className="absolute top-30 right-10 hidden bg-gray-200 p-4 md:flex flex-col gap-6 rounded-full">
-        <img src={facebook} alt="" className="w-20 " />
-        <img src={instagram} alt="" className="w-20" />
-        <img src={twitter} alt="" className="w-20" />
-        <img src={linkedin} alt="" className="w-20" />
+        <a href="https://www.facebook.com/saifulislamsumon017" target="_blank">
+          <img src={facebook} alt="" className="w-20 " />
+        </a>
+        <a
+          href="https://www.instagram.com/saifulislam.sumon017/"
+          target="_blank"
+        >
+          <img src={instagram} alt="" className="w-20" />
+        </a>
+        <a href="https://x.com/Saifulislam169" target="_blank">
+          {' '}
+          <img src={twitter} alt="" className="w-20" />
+        </a>
+        <a href="https://www.linkedin.com/in/saifulislamsumon/" target="_blank">
+          <img src={linkedin} alt="" className="w-20" />
+        </a>
       </div>
     </div>
   );

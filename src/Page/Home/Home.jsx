@@ -10,6 +10,7 @@ import Experience from '../../Components/Experience';
 const Home = () => {
   return (
     <>
+      <title>Mohammad Saiful Islam | My Portfolio</title>
       <Hero />
       <About />
       <Education />
