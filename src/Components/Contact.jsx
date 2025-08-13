@@ -44,13 +44,30 @@ const Contact = () => {
 
             {/* Social Links */}
             <div className="flex space-x-4 mb-6">
-              <a href="#" className="hover:scale-110 transition-transform">
+              <a
+                href="https://www.facebook.com/saifulislamsumon017"
+                target="_blank"
+                className="hover:scale-110 transition-transform"
+              >
                 <img src={facebook} alt="Facebook" className="h-6 w-6" />
               </a>
-              <a href="#" className="hover:scale-110 transition-transform">
-                <img src={instagram} alt="Instagram" className="h-6 w-6" />
+              <a
+                href="https://www.instagram.com/saifulislam.sumon017/"
+                target="_blank"
+                className="hover:scale-110 transition-transform"
+              >
+                <img
+                  src={instagram}
+                  target="_blank"
+                  alt="Instagram"
+                  className="h-6 w-6"
+                />
               </a>
-              <a href="#" className="hover:scale-110 transition-transform">
+              <a
+                href="https://www.linkedin.com/in/saifulislamsumon/"
+                target="_blank"
+                className="hover:scale-110 transition-transform"
+              >
                 <img src={linkedin} alt="LinkedIn" className="h-6 w-6" />
               </a>
             </div>

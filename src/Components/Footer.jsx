@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Instagram, Linkedin } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Github, Twitter } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 py-10 flex flex-col md:flex-row justify-between items-center gap-8">
         {/* Left - Logo / Name */}
         <div className="text-center md:text-left">
-          <h2 className="text-2xl font-bold tracking-wide">
+          <h2 className="text-3xl font-bold tracking-wide">
             Saiful<span className="text-red-500">Islam</span>
           </h2>
           <p className="text-sm text-gray-400 mt-1">
@@ -26,14 +26,14 @@ const Footer = () => {
           <a href="#education" className="hover:text-red-400 transition-colors">
             Education
           </a>
-          <a href="#projects" className="hover:text-red-400 transition-colors">
-            Projects
-          </a>
           <a
             href="#experience"
             className="hover:text-red-400 transition-colors"
           >
             Experience
+          </a>
+          <a href="#projects" className="hover:text-red-400 transition-colors">
+            Projects
           </a>
           <a href="#contact" className="hover:text-red-400 transition-colors">
             Contact
@@ -43,13 +43,25 @@ const Footer = () => {
         {/* Right - Social Icons */}
         <div className="flex gap-4">
           {[
-            { icon: Facebook, link: '#' },
-            { icon: Instagram, link: '#' },
-            { icon: Linkedin, link: '#' },
+            {
+              icon: Facebook,
+              link: 'https://www.facebook.com/saifulislamsumon017',
+            },
+            {
+              icon: Instagram,
+              link: 'https://www.instagram.com/saifulislam.sumon017/',
+            },
+            { icon: Twitter, link: 'https://x.com/Saifulislam169' },
+            {
+              icon: Linkedin,
+              link: 'https://www.linkedin.com/in/saifulislamsumon/',
+            },
+            { icon: Github, link: 'https://github.com/Saifulislamsumon017' },
           ].map((item, i) => (
             <a
               key={i}
               href={item.link}
+              target="_blank"
               className="p-2 rounded-full bg-gray-700 hover:bg-red-500 transition-colors"
             >
               <item.icon className="w-5 h-5" />
